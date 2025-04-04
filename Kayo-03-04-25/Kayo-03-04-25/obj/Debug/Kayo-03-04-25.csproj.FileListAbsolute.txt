@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\bin\Debug\Kayo-03-04-25.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\bin\Debug\Kayo-03-04-25.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\bin\Debug\Kayo-03-04-25.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\obj\Debug\Kayo-03-04-25.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\obj\Debug\Kayo-03-04-25.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\obj\Debug\Kayo-03-04-25.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Kayo-03-04-25\Kayo-03-04-25\obj\Debug\Kayo-03-04-25.pdb

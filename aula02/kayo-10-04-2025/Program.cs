@@ -35,16 +35,31 @@ namespace kayo_10_04_2025
         //        Console.WriteLine("O Objeto foi destruido");
         //    }
         //}
-        public class Livro
-        {
-            public string titulo { get; set; }
-            public string autor { get; set; }
 
-            public void ExibirInformacoes()
+
+        //public class Livro
+        //{
+        //    public string titulo { get; set; }
+        //    public string autor { get; set; }
+
+        //    public void ExibirInformacoes()
+        //    {
+        //        Console.WriteLine($"O Titulo do Livro é {this.titulo} e o Autor é {this.autor}");
+        //    }
+        //}
+        public class Filme
+        {
+            public string nome {  get; set; }
+            public int anoLancamento { get; set; }
+
+            public void MostrarDetalhes()
             {
-                Console.WriteLine($"O Titulo do Livro é {this.titulo} e o Autor é {this.autor}");
+                Console.WriteLine($"O nome do filme é {nome} e o ano de lançamento é {anoLancamento}");
             }
         }
+
+
+
         static void Main(string[] args)
         {
 
@@ -65,10 +80,20 @@ namespace kayo_10_04_2025
             //resp2 = p2.AnoNascimento();
             //Console.WriteLine($"Resp: {resp}");
             //Console.WriteLine($"Resp2: {resp2}");
-            Livro l1 = new Livro();
-            l1.titulo = "Codificador Limpo";
-            l1.autor = "Alguem";
-            l1.ExibirInformacoes();
+
+
+
+            //Livro l1 = new Livro();
+            //l1.titulo = "Codificador Limpo";
+            //l1.autor = "Alguem";
+            //l1.ExibirInformacoes();
+
+            Filme f1 = new Filme();
+            f1.nome = "Tropa de Elite";
+            f1.anoLancamento = 2010;
+            f1.MostrarDetalhes();
+
+
         }
     }
 }

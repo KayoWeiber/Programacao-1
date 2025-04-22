@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace kayo_10_04_2025
 {
     internal class Program
+    
     {
         //public class Pessoa
         //{
@@ -47,19 +48,85 @@ namespace kayo_10_04_2025
         //        Console.WriteLine($"O Titulo do Livro é {this.titulo} e o Autor é {this.autor}");
         //    }
         //}
-        public class Filme
-        {
-            public string nome {  get; set; }
-            public int anoLancamento { get; set; }
+        //public class Filme
+        //{
+        //    public string nome {  get; set; }
+        //    public int anoLancamento { get; set; }
 
-            public void MostrarDetalhes()
+        //    public void MostrarDetalhes()
+        //    {
+        //        Console.WriteLine($"O nome do filme é {nome} e o ano de lançamento é {anoLancamento}");
+        //    }
+        //}
+        //public class cidade
+        //{
+        //    public string nome { get; set; }
+        //    public string estado { get; set; }
+        //    public void ExibirCidade()
+        //    {
+        //        Console.WriteLine($"O Nome da cidade é {nome} do estado {estado}");
+        //    }
+        //}
+
+        //public class musica
+        //{
+        //    public string titulo {  get; set; }
+        //    public string cantor {  get; set; }
+        //    public void TocarMusica()
+        //    {
+        //        Console.WriteLine($"Titulo da musica tocando é {titulo} do cantor {cantor}");
+        //    }
+        //}
+
+        //public class pessoa
+        //{
+        //    public string nome { get; set; }
+        //    public int idade { get; set; }
+        //    public void apresentar()
+        //    {
+        //        Console.WriteLine($"Olá meu nome é {nome} e tenho {idade}");
+        //    }
+        //}
+        //public class produto
+        //{
+        //    public string nome { get; set; }
+        //    public double preco { get; set; }
+        //    public void ExibirProduto()
+        //    {
+        //        Console.WriteLine($"O nome do produto é {nome} com o valor {preco}");
+        //    }
+        //}
+        //public class aluno
+        //{
+        //    public string nome { get; set; }
+        //    public decimal nota { get; set; }
+        //    public void MostrarNota()
+        //    {
+        //        Console.WriteLine($"O Aluno {nome} está com a nota {nota}");
+        //    }
+        //}
+        
+        //public class retangulo
+        //{
+        //    public double Base { get; set; }
+        //    public double altura { get; set; }
+        //    public void CalcularArea()
+        //    {
+        //        Console.WriteLine($"A Área é {Base*altura}");
+        //    }
+        //}
+
+        public class Mensagem
+        {
+            public string nome { get; set; }
+
+            public void saudacao()
             {
-                Console.WriteLine($"O nome do filme é {nome} e o ano de lançamento é {anoLancamento}");
+                Console.Write("Digite o seu nome: ");
+                this.nome=Console.ReadLine();
+                Console.WriteLine($"Olá {this.nome}, seja bem vindo!!");
             }
         }
-
-
-
         static void Main(string[] args)
         {
 
@@ -88,12 +155,44 @@ namespace kayo_10_04_2025
             //l1.autor = "Alguem";
             //l1.ExibirInformacoes();
 
-            Filme f1 = new Filme();
-            f1.nome = "Tropa de Elite";
-            f1.anoLancamento = 2010;
-            f1.MostrarDetalhes();
+            //Filme f1 = new Filme();
+            //f1.nome = "Tropa de Elite";
+            //f1.anoLancamento = 2010;
+            //f1.MostrarDetalhes();
 
+            //cidade c1 = new cidade();
+            //c1.nome = "Planura";
+            //c1.estado = "Minas Gerais";
+            //c1.ExibirCidade();
 
+            //musica m1 = new musica();
+            //m1.titulo = "Investe em mim";
+            //m1.cantor = "Balões da pisadinha";
+            //m1.TocarMusica();
+
+            //pessoa pTeSTE = new pessoa();
+            //pTeSTE.nome = "Kayo";
+            //pTeSTE.idade = 20;
+            //pTeSTE.apresentar();
+
+            //produto p1 = new produto();
+            //p1.nome = "Veja";
+            //p1.preco = 2.99;
+
+            //p1.ExibirProduto();
+
+            //aluno aluno = new aluno();
+            //aluno.nome = "Kayo";
+            //aluno.nota = 20;
+            //aluno.MostrarNota();
+
+            //retangulo r1 = new retangulo();
+            //r1.Base = 10;
+            //r1.altura = 7;
+            //r1.CalcularArea();
+
+            Mensagem m1 = new Mensagem();
+            m1.saudacao();
         }
     }
 }

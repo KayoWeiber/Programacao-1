@@ -21,7 +21,7 @@ namespace Trabalho1_07_05
             public int minutosSaida { get; set; }
 
 
-            public estacionamento(string placaVeiculo,string marcaVeiculo,string modeloVeiculo, string tipoVeiculo,int horasEntrada,int minutosEntrada,int horasSaida,int minutosSaida)
+            public estacionamento(string placaVeiculo, string marcaVeiculo, string modeloVeiculo, string tipoVeiculo, int horasEntrada, int minutosEntrada, int horasSaida, int minutosSaida)
             {
                 this.placaVeiculo = placaVeiculo;
                 this.marcaVeiculo = marcaVeiculo;
@@ -135,40 +135,112 @@ namespace Trabalho1_07_05
 
 
             }
+            public void informacoesSaida()
+            {
+                while (true)
+                {
+                    try
+                    {
+                        Console.Write($"Digite a hora de saída: ");
+                        this.horasSaida = int.Parse(Console.ReadLine());
+                        if (this.horasSaida < 0 || this.horasSaida > 23)
+                        {
+                            Console.WriteLine("Hora inválida. Por favor, escolha um número entre 0 e 23.");
+                            continue;
+                        }
+                        else
+                        {
+                            if (this.horasSaida < this.horasEntrada)
+                            {
+                                Console.WriteLine($"A hora de saída não pode ser menor que a de entrada!");
+                                continue;
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Por favor, digite um número válido (apenas números).");
+                    }
+                }
+                while (true)
+                {
+                    try
+                    {
+                        Console.Write($"Digite os minutos de saída: ");
+                        this.minutosSaida = int.Parse(Console.ReadLine());
+                        if (this.minutosSaida < 0 || this.minutosSaida > 59)
+                        {
+                            Console.WriteLine("Minuto inválido. Por favor, escolha um número entre 0 e 59.");
+                            continue;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Por favor, digite um número válido (apenas números).");
+                    }
+                }
+            }
 
 
-            //public void transformarHoras(int horasEntrada, int minutosEntrada,int horasSaida,int minutosSaida)
-            //{
-            //    this.horasEntrada = horasEntrada;
-            //    this.minutosEntrada = minutosEntrada;
-            //    this.horasSaida = horasSaida;
-            //    this.minutosSaida = minutosSaida;
+            public int transformarHoras(/*int horasEntrada, int minutosEntrada, int horasSaida, int minutosSaida*/)
+            {
+                //this.horasEntrada = horasEntrada;
+                //this.minutosEntrada = minutosEntrada;
+                //this.horasSaida = horasSaida;
+                //this.minutosSaida = minutosSaida;
 
-            //    if (minutosEntrada >=60)
-            //    {
-            //        Console.WriteLine($"A quantidade de minutos de entrada já se soma mais de 1 hora!");
+                int entradaTotal = (horasEntrada * 60) + minutosEntrada;
+                int saidaTotal = (horasSaida * 60) + minutosSaida;
 
-            //    }else if (minutosSaida >= 60)
-            //    {
-            //        Console.WriteLine($"A quantidade de minutos de saida já se soma mais de 1 hora!");
-            //    }
-            //    int entradaTotal = (horasEntrada * 60) + minutosEntrada;
-            //    int saidaTotal = (horasSaida * 60) + minutosSaida;
-
-            //    if (entradaTotal < saidaTotal)
-            //    {
-            //        Console.WriteLine($"O horário de saída é menor que o de entrada!!");
-            //    }
-
-            //}
+                return saidaTotal - entradaTotal;
+            }
+            public void ValorEstacionamento()
+            {
+                int tempoTotal = transformarHoras();
+                double valor = 0;
+                double precoHora;
+                switch (tipoVeiculo)
+                {
+                    case "Passeio":
+                        precoHora = 3.50;
+                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;//Math.Ceiling arredonda para cima
+                        break;
+                    case "Utilitário":
+                        precoHora = 4.50;
+                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
+                        break;
+                    case "Ônibus":
+                        precoHora = 7.50;
+                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
+                        break;
+                    case "Caminhão":
+                        precoHora = 10.00;
+                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
+                        break;
+                }
+                Console.WriteLine($"O valor total do estacionamento é: R$ {valor}");
+            }
         }
         static void Main(string[] args)
         {
             estacionamento veiculo = new estacionamento("", "", "", "", 0, 0, 0, 0);
-            //veiculo.informacoesVeiculo();
-            //Console.WriteLine(veiculo.tipoVeiculo);
-            //veiculo.informacoesEntrada();
-            //Console.WriteLine($"Hora de entrada: {veiculo.horasEntrada}:{veiculo.minutosEntrada}");
+            veiculo.informacoesVeiculo();
+            Console.WriteLine(veiculo.tipoVeiculo);
+            veiculo.informacoesEntrada();
+            Console.WriteLine($"Hora de entrada: {veiculo.horasEntrada}:{veiculo.minutosEntrada}");
+            veiculo.informacoesSaida();
+            Console.WriteLine($"Hora de saída: {veiculo.horasSaida}:{veiculo.minutosSaida}");
+            veiculo.ValorEstacionamento();
+
         }
     }
 }
+

@@ -266,7 +266,7 @@ namespace Trabalho1_07_05
                                 bool algumaDisponivel = false;
                                 for (int i = 0; i < vagas.Length; i++)
                                 {
-                                    if (/*vagas[i] == null || */vagas[i].horasEntrada == -1) //-1 é vaga que já foi ocupada, null é vaga que nunca foi ocupada
+                                    if (vagas[i].horasEntrada == -1)
                                     {
                                         Console.WriteLine($"- Vaga {i} (disponível)");
                                         algumaDisponivel = true;
@@ -278,7 +278,7 @@ namespace Trabalho1_07_05
                                 }
                                 else
                                 {
-                                    Console.Write("Escolha uma vaga disponível:");
+                                    Console.Write("Escolha uma vaga disponível (digite o número):");
                                     int vagaEscolhida = int.Parse(Console.ReadLine());
                                     if (vagaEscolhida < 0 || vagaEscolhida >= vagas.Length)
                                     {
@@ -287,16 +287,17 @@ namespace Trabalho1_07_05
                                     }
                                     else
                                     {
-                                        if (/*vagas[vagaEscolhida] != null && */vagas[vagaEscolhida].horasEntrada != -1)
+                                        if (vagas[vagaEscolhida].horasEntrada != -1)
                                         {
                                             Console.WriteLine("Essa vaga já está ocupada.");
                                             continue;
                                         }
                                         else
                                         {
-                                            veiculo.informacoesVeiculo();
-                                            veiculo.informacoesEntrada();
-                                            vagas[vagaEscolhida] = veiculo;
+                                            estacionamento novoVeiculo = new estacionamento("", "", "", "", 0, 0, 0, 0);
+                                            novoVeiculo.informacoesVeiculo();
+                                            novoVeiculo.informacoesEntrada();
+                                            vagas[vagaEscolhida] = novoVeiculo;
                                             Console.WriteLine($"\nVeículo {veiculo.placaVeiculo} estacionado na vaga {vagaEscolhida}.");
                                         }
                                     }
@@ -309,7 +310,7 @@ namespace Trabalho1_07_05
                                 bool algumaOcupada = false;
                                 for (int i = 0; i < vagas.Length; i++)
                                 {
-                                    if (/*vagas[i] != null && */vagas[i].horasEntrada != -1)
+                                    if (vagas[i].horasEntrada != -1)
                                     {
                                         Console.WriteLine($"- Vaga {i}");
                                         algumaOcupada = true;
@@ -321,7 +322,7 @@ namespace Trabalho1_07_05
                                 }
                                 else
                                 {
-                                    Console.Write("Escolha uma vaga ocupada:");
+                                    Console.Write("Escolha uma vaga ocupada (digite o número):");
                                     int vagaEscolhida = int.Parse(Console.ReadLine());
                                     if (vagaEscolhida < 0 || vagaEscolhida >= vagas.Length)
                                     {
@@ -330,18 +331,16 @@ namespace Trabalho1_07_05
                                     }
                                     else
                                     {
-                                        if (/*vagas[vagaEscolhida] == null || */vagas[vagaEscolhida].horasEntrada == -1)
+                                        if (vagas[vagaEscolhida].horasEntrada == -1)
                                         {
                                             Console.WriteLine("Essa vaga não está ocupada.");
                                             continue;
                                         }
                                         else
                                         {
-                                            veiculo = vagas[vagaEscolhida];
-                                            veiculo.informacoesSaida();
-                                            veiculo.ValorEstacionamento();
-                                            veiculo.tempoNegativar();
-                                            vagas[vagaEscolhida] = veiculo;
+                                            vagas[vagaEscolhida].informacoesSaida();
+                                            vagas[vagaEscolhida].ValorEstacionamento();
+                                            vagas[vagaEscolhida].tempoNegativar();
                                             Console.WriteLine($"\nVeículo {veiculo.placaVeiculo} saiu da vaga {vagaEscolhida}.");
                                         }
                                     }

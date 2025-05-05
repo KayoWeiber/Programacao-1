@@ -1,0 +1,7 @@
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\bin\Debug\Trabalho1-07-05.exe.config
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\bin\Debug\Trabalho1-07-05.exe
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\bin\Debug\Trabalho1-07-05.pdb
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\obj\Debug\Trabalho1-07-05.csproj.AssemblyReference.cache
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\obj\Debug\Trabalho1-07-05.csproj.CoreCompileInputs.cache
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\obj\Debug\Trabalho1-07-05.exe
+C:\Users\Kayo Weiber\source\repos\KayoWeiber\Programacao-1\Trabalho1-07-05\Trabalho1-07-05\obj\Debug\Trabalho1-07-05.pdb

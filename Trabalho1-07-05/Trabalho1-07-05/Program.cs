@@ -19,8 +19,6 @@ namespace Trabalho1_07_05
             public int minutosEntrada { get; set; }
             public int horasSaida { get; set; }
             public int minutosSaida { get; set; }
-
-
             public estacionamento(string placaVeiculo, string marcaVeiculo, string modeloVeiculo, string tipoVeiculo, int horasEntrada, int minutosEntrada, int horasSaida, int minutosSaida)
             {
                 this.placaVeiculo = placaVeiculo;
@@ -39,7 +37,6 @@ namespace Trabalho1_07_05
                 this.horasSaida = -1;
                 this.minutosSaida = -1;
             }
-
             public void informacoesVeiculo()
             {
                 Console.Write($"Digite a placa do veículo: ");
@@ -49,7 +46,6 @@ namespace Trabalho1_07_05
                 Console.Write($"Digite o modelo do veículo: ");
                 this.modeloVeiculo = Console.ReadLine();
                 int tipo = 0;
-
                 while (true)
                 {
                     try
@@ -132,8 +128,6 @@ namespace Trabalho1_07_05
                     }
 
                 }
-
-
             }
             public void informacoesSaida()
             {
@@ -188,18 +182,10 @@ namespace Trabalho1_07_05
                     }
                 }
             }
-
-
-            public int transformarHoras(/*int horasEntrada, int minutosEntrada, int horasSaida, int minutosSaida*/)
+            public int transformarHoras()
             {
-                //this.horasEntrada = horasEntrada;
-                //this.minutosEntrada = minutosEntrada;
-                //this.horasSaida = horasSaida;
-                //this.minutosSaida = minutosSaida;
-
                 int entradaTotal = (horasEntrada * 60) + minutosEntrada;
                 int saidaTotal = (horasSaida * 60) + minutosSaida;
-
                 return saidaTotal - entradaTotal;
             }
             public void ValorEstacionamento()
@@ -211,7 +197,7 @@ namespace Trabalho1_07_05
                 {
                     case "Passeio":
                         precoHora = 3.50;
-                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;//Math.Ceiling arredonda para cima
+                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
                         break;
                     case "Utilitário":
                         precoHora = 4.50;
@@ -232,19 +218,11 @@ namespace Trabalho1_07_05
         static void Main(string[] args)
         {
             estacionamento veiculo = new estacionamento("", "", "", "", 0, 0, 0, 0);
-            //veiculo.informacoesVeiculo();
-            //Console.WriteLine(veiculo.tipoVeiculo);
-            //veiculo.informacoesEntrada();
-            //Console.WriteLine($"Hora de entrada: {veiculo.horasEntrada}:{veiculo.minutosEntrada}");
-            //veiculo.informacoesSaida();
-            //Console.WriteLine($"Hora de saída: {veiculo.horasSaida}:{veiculo.minutosSaida}");
-            //veiculo.ValorEstacionamento();
             estacionamento[] vagas = new estacionamento[10];
             for (int i = 0; i < vagas.Length; i++)
             {
                 vagas[i] = new estacionamento("", "", "", "", -1, -1, -1, -1); // Inicializa todas as vagas como não ocupadas
             }
-
             while (true)
             {
                 try
@@ -303,7 +281,6 @@ namespace Trabalho1_07_05
                                     }
                                 }
                                 break;
-                 
                             case 2:
                                 Console.WriteLine("\nSaída de veículo");
                                 Console.WriteLine("Vagas ocupadas: ");

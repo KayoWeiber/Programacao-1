@@ -221,7 +221,7 @@ namespace Trabalho1_07_05
             estacionamento[] vagas = new estacionamento[10];
             for (int i = 0; i < vagas.Length; i++)
             {
-                vagas[i] = new estacionamento("", "", "", "", -1, -1, -1, -1); // Inicializa todas as vagas como não ocupadas
+                vagas[i] = new estacionamento("", "", "", "", -1, -1, -1, -1);
             }
             while (true)
             {
@@ -246,7 +246,7 @@ namespace Trabalho1_07_05
                                 {
                                     if (vagas[i].horasEntrada == -1)
                                     {
-                                        Console.WriteLine($"- Vaga {i} (disponível)");
+                                        Console.WriteLine($"Vaga {i} - (disponível)");
                                         algumaDisponivel = true;
                                     }
                                 }
@@ -337,4 +337,3 @@ namespace Trabalho1_07_05
         }
     }
 }
-

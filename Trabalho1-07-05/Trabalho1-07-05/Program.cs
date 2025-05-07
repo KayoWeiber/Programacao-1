@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Trabalho1_07_05
 {
     internal class Program
@@ -30,13 +24,7 @@ namespace Trabalho1_07_05
                 this.horasSaida = horasSaida;
                 this.minutosSaida = minutosSaida;
             }
-            public void tempoNegativar()
-            {
-                this.horasEntrada = -1;
-                this.minutosEntrada = -1;
-                this.horasSaida = -1;
-                this.minutosSaida = -1;
-            }
+            public void tempoNegativar(){this.horasEntrada = -1; this.minutosEntrada = -1; this.horasSaida = -1; this.minutosSaida = -1;}
             public void informacoesVeiculo()
             {
                 Console.Write($"Digite a placa do veículo: ");
@@ -123,12 +111,7 @@ namespace Trabalho1_07_05
 
                 }
             }
-            public int transformarHoras()
-            {
-                int entradaTotal = (horasEntrada * 60) + minutosEntrada;
-                int saidaTotal = (horasSaida * 60) + minutosSaida;
-                return saidaTotal - entradaTotal;
-            }
+            public int transformarHoras(){int entradaTotal = (horasEntrada * 60) + minutosEntrada;int saidaTotal = (horasSaida * 60) + minutosSaida;return saidaTotal - entradaTotal;}
             public void ValorEstacionamento()
             {
                 int tempoTotal = transformarHoras();
@@ -177,8 +160,7 @@ namespace Trabalho1_07_05
                     switch (opcao)
                     {
                         case 1:
-                            Console.WriteLine("\nEntrada de veículos");
-                            Console.WriteLine("Vagas disponíveis: ");
+                            Console.WriteLine("\nEntrada de veículos\nVagas disponíveis:");
                             bool algumaDisponivel = false;
                             for (int i = 0; i < vagas.Length; i++)
                             {
@@ -220,8 +202,7 @@ namespace Trabalho1_07_05
                             }
                             break;
                         case 2:
-                            Console.WriteLine("\nSaída de veículo");
-                            Console.WriteLine("Vagas ocupadas: ");
+                            Console.WriteLine("\nSaída de veículo\n\"Vagas ocupadas: \"");
                             bool algumaOcupada = false;
                             for (int i = 0; i < vagas.Length; i++)
                             {

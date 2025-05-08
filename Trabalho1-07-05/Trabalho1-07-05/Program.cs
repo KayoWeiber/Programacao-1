@@ -13,240 +13,90 @@ namespace Trabalho1_07_05
             public int minutosEntrada { get; set; }
             public int horasSaida { get; set; }
             public int minutosSaida { get; set; }
-            public estacionamento(string placaVeiculo, string marcaVeiculo, string modeloVeiculo, string tipoVeiculo, int horasEntrada, int minutosEntrada, int horasSaida, int minutosSaida)
-            {
-                this.placaVeiculo = placaVeiculo;
-                this.marcaVeiculo = marcaVeiculo;
-                this.modeloVeiculo = modeloVeiculo;
-                this.tipoVeiculo = tipoVeiculo;
-                this.horasEntrada = horasEntrada;
-                this.minutosEntrada = minutosEntrada;
-                this.horasSaida = horasSaida;
-                this.minutosSaida = minutosSaida;
-            }
-            public void tempoNegativar(){this.horasEntrada = -1; this.minutosEntrada = -1; this.horasSaida = -1; this.minutosSaida = -1;}
+            public estacionamento(string p, string m, string mo, string t, int he, int me, int hs, int ms)
+            { placaVeiculo = p; marcaVeiculo = m; modeloVeiculo = mo; tipoVeiculo = t; horasEntrada = he; minutosEntrada = me; horasSaida = hs; minutosSaida = ms; }
+            public void tempoNegativar() { horasEntrada = minutosEntrada = horasSaida = minutosSaida = -1; }
             public void informacoesVeiculo()
             {
-                Console.Write($"Digite a placa do veículo: ");
-                this.placaVeiculo = Console.ReadLine();
-                Console.Write($"Digite a marca do veículo: ");
-                this.marcaVeiculo = Console.ReadLine();
-                Console.Write($"Digite o modelo do veículo: ");
-                this.modeloVeiculo = Console.ReadLine();
-                int tipo = 0;
-                while (true)
+                Console.Write("Digite a placa do veículo: "); placaVeiculo = Console.ReadLine();
+                Console.Write("Digite a marca do veículo: "); marcaVeiculo = Console.ReadLine();
+                Console.Write("Digite o modelo do veículo: "); modeloVeiculo = Console.ReadLine();
+                int tipo; while (true)
                 {
-                    Console.Write($"Tipos de veículo:\n1 - Passeio\n2 - Utilitário\n3 - Ônibus\n4 - Caminhão\nDigite a opção desejada:");
+                    Console.Write("Tipos de veículo:\n1 - Passeio\n2 - Utilitário\n3 - Ônibus\n4 - Caminhão\nDigite a opção desejada:");
                     tipo = int.Parse(Console.ReadLine());
-                    if (tipo < 1 || tipo > 4)
-                    {
-                        Console.WriteLine("Opção inválida. Por favor, escolha um número entre 1 e 4.");
-                        continue;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    if (tipo >= 1 && tipo <= 4) break; else Console.WriteLine("Opção inválida. Escolha entre 1 e 4.");
                 }
-                switch (tipo)
-                {
-                    case 1:
-                        this.tipoVeiculo = "Passeio";
-                        break;
-                    case 2:
-                        this.tipoVeiculo = "Utilitário";
-                        break;
-                    case 3:
-                        this.tipoVeiculo = "Ônibus";
-                        break;
-                    case 4:
-                        this.tipoVeiculo = "Caminhão";
-                        break;
-                }
+                tipoVeiculo = tipo == 1 ? "Passeio" : tipo == 2 ? "Utilitário" : tipo == 3 ? "Ônibus" : "Caminhão";
             }
             public void informacoesEntrada()
             {
                 while (true)
                 {
-                    Console.Write($"Digite a hora de entrada: ");
-                    this.horasEntrada = int.Parse(Console.ReadLine());
-                    Console.Write($"Digite os minutos de entrada: ");
-                    this.minutosEntrada = int.Parse(Console.ReadLine());
-                    if (this.minutosEntrada < 0 || this.minutosEntrada > 59 || this.horasEntrada < 0 || this.horasEntrada > 23)
-                    {
-                        Console.WriteLine("Horário inválido. Por favor, escolha um horário válido.");
-                        continue;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    Console.Write("Digite a hora de entrada: "); horasEntrada = int.Parse(Console.ReadLine());
+                    Console.Write("Digite os minutos de entrada: "); minutosEntrada = int.Parse(Console.ReadLine());
+                    if (minutosEntrada >= 0 && minutosEntrada <= 59 && horasEntrada >= 0 && horasEntrada <= 23) break;
+                    Console.WriteLine("Horário inválido.");
                 }
             }
             public void informacoesSaida()
             {
                 while (true)
                 {
-                    Console.Write($"Digite a hora de saída: ");
-                    this.horasSaida = int.Parse(Console.ReadLine());
-                    Console.Write($"Digite os minutos de saída: ");
-                    this.minutosSaida = int.Parse(Console.ReadLine());
-                    if (this.horasSaida < 0 || this.horasSaida > 23 || this.minutosSaida < 0 || this.minutosSaida > 59)
-                    {
-                        Console.WriteLine("Horário inválido. Por favor, escolha um horário válido.");
-                        continue;
-                    }
-                    else
-                    {
-                        if ((this.horasSaida < this.horasEntrada) || this.horasSaida == this.horasEntrada && this.minutosSaida < this.minutosEntrada)
-                        {
-                            Console.WriteLine($"A hora de saída não pode ser menor que a de entrada!");
-                            continue;
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
-
+                    Console.Write("Digite a hora de saída: "); horasSaida = int.Parse(Console.ReadLine());
+                    Console.Write("Digite os minutos de saída: "); minutosSaida = int.Parse(Console.ReadLine());
+                    if (horasSaida < 0 || horasSaida > 23 || minutosSaida < 0 || minutosSaida > 59)
+                    { Console.WriteLine("Horário inválido."); continue; }
+                    if (horasSaida < horasEntrada || (horasSaida == horasEntrada && minutosSaida < minutosEntrada))
+                    { Console.WriteLine("A hora de saída não pode ser menor que a de entrada!"); continue; }
+                    break;
                 }
             }
-            public int transformarHoras(){int entradaTotal = (horasEntrada * 60) + minutosEntrada;int saidaTotal = (horasSaida * 60) + minutosSaida;return saidaTotal - entradaTotal;}
+            public int transformarHoras() => (horasSaida * 60 + minutosSaida) - (horasEntrada * 60 + minutosEntrada);
             public void ValorEstacionamento()
             {
-                int tempoTotal = transformarHoras();
-                double valor = 0;
-                double precoHora;
-                switch (tipoVeiculo)
-                {
-                    case "Passeio":
-                        precoHora = 3.50;
-                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
-                        break;
-                    case "Utilitário":
-                        precoHora = 4.50;
-                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
-                        break;
-                    case "Ônibus":
-                        precoHora = 7.50;
-                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
-                        break;
-                    case "Caminhão":
-                        precoHora = 10.00;
-                        valor = Math.Ceiling(tempoTotal / 60.0) * precoHora;
-                        break;
-                }
+                int tempo = transformarHoras(); double valor = 0, precoHora = tipoVeiculo == "Passeio" ? 3.5 : tipoVeiculo == "Utilitário" ? 4.5 : tipoVeiculo == "Ônibus" ? 7.5 : 10.0;
+                valor = Math.Ceiling(tempo / 60.0) * precoHora;
                 Console.WriteLine($"O valor total do estacionamento é: R$ {valor:F2}");
             }
         }
         static void Main(string[] args)
         {
-            estacionamento veiculo = new estacionamento("", "", "", "", 0, 0, 0, 0);
             estacionamento[] vagas = new estacionamento[10];
-            for (int i = 0; i < vagas.Length; i++)
-            {
-                vagas[i] = new estacionamento("", "", "", "", -1, -1, -1, -1);
-            }
+            for (int i = 0; i < vagas.Length; i++) vagas[i] = new estacionamento("", "", "", "", -1, -1, -1, -1);
             while (true)
             {
                 Console.Write("Menu:\n1. Entrada de veículos\n2. Saída de veículo\n3. Sair\nDigite a opção desejada: ");
                 int opcao = int.Parse(Console.ReadLine());
-                if (opcao < 1 || opcao > 3)
+                if (opcao == 1)
                 {
-                    Console.WriteLine("Opção inválida. Por favor, escolha um número entre 1 e 3.");
-                }
-                else
-                {
-                    switch (opcao)
+                    Console.WriteLine("\nEntrada de veículos\nVagas disponíveis (digite o numero):"); bool disponivel = false;
+                    for (int i = 0; i < vagas.Length; i++) if (vagas[i].horasEntrada == -1) { Console.WriteLine($"Vaga {i} - (disponível)"); disponivel = true; }
+                    if (!disponivel) Console.WriteLine("Nenhuma vaga disponível.");
+                    else
                     {
-                        case 1:
-                            Console.WriteLine("\nEntrada de veículos\nVagas disponíveis:");
-                            bool algumaDisponivel = false;
-                            for (int i = 0; i < vagas.Length; i++)
-                            {
-                                if (vagas[i].horasEntrada == -1)
-                                {
-                                    Console.WriteLine($"Vaga {i} - (disponível)");
-                                    algumaDisponivel = true;
-                                }
-                            }
-                            if (!algumaDisponivel)
-                            {
-                                Console.WriteLine("Nenhuma vaga disponível no momento.");
-                            }
-                            else
-                            {
-                                Console.Write("Escolha uma vaga disponível (digite o número):");
-                                int vagaEscolhida = int.Parse(Console.ReadLine());
-                                if (vagaEscolhida < 0 || vagaEscolhida >= vagas.Length)
-                                {
-                                    Console.WriteLine("Vaga inválida. Por favor, escolha um número entre 0 e 9.");
-                                    continue;
-                                }
-                                else
-                                {
-                                    if (vagas[vagaEscolhida].horasEntrada != -1)
-                                    {
-                                        Console.WriteLine("Essa vaga já está ocupada.");
-                                        continue;
-                                    }
-                                    else
-                                    {
-                                        estacionamento novoVeiculo = new estacionamento("", "", "", "", 0, 0, 0, 0);
-                                        novoVeiculo.informacoesVeiculo();
-                                        novoVeiculo.informacoesEntrada();
-                                        vagas[vagaEscolhida] = novoVeiculo;
-                                        Console.WriteLine($"\nVeículo {veiculo.placaVeiculo} estacionado na vaga {vagaEscolhida}.");
-                                    }
-                                }
-                            }
-                            break;
-                        case 2:
-                            Console.WriteLine("\nSaída de veículo\n\"Vagas ocupadas: \"");
-                            bool algumaOcupada = false;
-                            for (int i = 0; i < vagas.Length; i++)
-                            {
-                                if (vagas[i].horasEntrada != -1)
-                                {
-                                    Console.WriteLine($"- Vaga {i}");
-                                    algumaOcupada = true;
-                                }
-                            }
-                            if (!algumaOcupada)
-                            {
-                                Console.WriteLine("Nenhuma vaga ocupada no momento.");
-                            }
-                            else
-                            {
-                                Console.Write("Escolha uma vaga ocupada (digite o número):");
-                                int vagaEscolhida = int.Parse(Console.ReadLine());
-                                if (vagaEscolhida < 0 || vagaEscolhida >= vagas.Length)
-                                {
-                                    Console.WriteLine("Vaga inválida. Por favor, escolha um número entre 0 e 9.");
-                                    continue;
-                                }
-                                else
-                                {
-                                    if (vagas[vagaEscolhida].horasEntrada == -1)
-                                    {
-                                        Console.WriteLine("Essa vaga não está ocupada.");
-                                        continue;
-                                    }
-                                    else
-                                    {
-                                        vagas[vagaEscolhida].informacoesSaida();
-                                        vagas[vagaEscolhida].ValorEstacionamento();
-                                        vagas[vagaEscolhida].tempoNegativar();
-                                        Console.WriteLine($"\nVeículo {veiculo.placaVeiculo} saiu da vaga {vagaEscolhida}.");
-                                    }
-                                }
-                            }
-                            break;
-                        case 3:
-                            Console.WriteLine("Sistema encerrado.");
-                            return;
+                        Console.Write("Escolha uma vaga: "); int v = int.Parse(Console.ReadLine());
+                        if (v < 0 || v >= vagas.Length || vagas[v].horasEntrada != -1) { Console.WriteLine("Vaga inválida ou ocupada."); continue; }
+                        estacionamento novo = new estacionamento("", "", "", "", 0, 0, 0, 0);
+                        novo.informacoesVeiculo(); novo.informacoesEntrada(); vagas[v] = novo;
+                        Console.WriteLine($"\nVeículo {novo.placaVeiculo} estacionado na vaga {v}.");
                     }
                 }
+                else if (opcao == 2)
+                {
+                    Console.WriteLine("\nSaída de veículo\nVagas ocupadas (digite o numero):"); bool ocupada = false;
+                    for (int i = 0; i < vagas.Length; i++) if (vagas[i].horasEntrada != -1) { Console.WriteLine($"- Vaga {i}"); ocupada = true; }
+                    if (!ocupada) Console.WriteLine("Nenhuma vaga ocupada.");
+                    else
+                    {
+                        Console.Write("Escolha uma vaga: "); int v = int.Parse(Console.ReadLine());
+                        if (v < 0 || v >= vagas.Length || vagas[v].horasEntrada == -1) { Console.WriteLine("Vaga inválida ou desocupada."); continue; }
+                        vagas[v].informacoesSaida(); vagas[v].ValorEstacionamento(); vagas[v].tempoNegativar();
+                        Console.WriteLine($"\nVeículo {vagas[v].placaVeiculo} saiu da vaga {v}.");
+                    }
+                }
+                else if (opcao == 3) { Console.WriteLine("Sistema encerrado."); return; }
+                else Console.WriteLine("Opção inválida.");
             }
         }
     }

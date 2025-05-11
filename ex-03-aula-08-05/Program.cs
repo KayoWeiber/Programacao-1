@@ -14,6 +14,7 @@ namespace ex_03_aula_08_05
             int opcao;
             do
             {
+                Console.WriteLine("\nMenu:");
                 Console.WriteLine("1. Adicionar Livro");
                 Console.WriteLine("2. Listar Livros");
                 Console.WriteLine("3. Buscar Livro por Autor");

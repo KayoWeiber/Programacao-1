@@ -1,0 +1,7 @@
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\bin\Debug\ex-03-aula-08-05.exe.config
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\bin\Debug\ex-03-aula-08-05.exe
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\bin\Debug\ex-03-aula-08-05.pdb
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\obj\Debug\ex-03-aula-08-05.csproj.AssemblyReference.cache
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\obj\Debug\ex-03-aula-08-05.csproj.CoreCompileInputs.cache
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\obj\Debug\ex-03-aula-08-05.exe
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ex-03-aula-08-05\obj\Debug\ex-03-aula-08-05.pdb

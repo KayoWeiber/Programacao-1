@@ -19,7 +19,11 @@ namespace ex_04_aula_08_05_2025
         }
         public void Exibir()
         {
-            Console.WriteLine($"Nome:{nome}, Cargo: {cargo}, Salario: {salario}");
+            Console.WriteLine($"\nNome:{nome}, Cargo: {cargo}, Salario: {salario}");
+            if (salario>3000)
+            {
+                Console.WriteLine("Funcionario com salario acima de 3000");
+            }
         }
     }
 }

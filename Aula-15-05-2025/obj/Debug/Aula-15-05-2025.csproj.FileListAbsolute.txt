@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\bin\Debug\Aula-15-05-2025.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\bin\Debug\Aula-15-05-2025.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\bin\Debug\Aula-15-05-2025.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\obj\Debug\Aula-15-05-2025.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\obj\Debug\Aula-15-05-2025.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\obj\Debug\Aula-15-05-2025.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-15-05-2025\obj\Debug\Aula-15-05-2025.pdb

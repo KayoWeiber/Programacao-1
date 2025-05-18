@@ -19,6 +19,7 @@ namespace ex_04_aula_08_05_2025
         }
         public void Exibir()
         {
+            
             Console.WriteLine($"\nNome:{nome}, Cargo: {cargo}, Salario: {salario}");
             if (salario>3000)
             {

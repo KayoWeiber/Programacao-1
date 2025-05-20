@@ -1,0 +1,7 @@
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\bin\Debug\ListaRevisaoPOO - ex08.exe.config
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\bin\Debug\ListaRevisaoPOO - ex08.exe
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\bin\Debug\ListaRevisaoPOO - ex08.pdb
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\obj\Debug\ListaRevisaoPOO - ex08.csproj.AssemblyReference.cache
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\obj\Debug\ListaRevisaoPOO - ex08.csproj.CoreCompileInputs.cache
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\obj\Debug\ListaRevisaoPOO - ex08.exe
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\ListaRevisaoPOO - ex08\obj\Debug\ListaRevisaoPOO - ex08.pdb

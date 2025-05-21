@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\bin\Debug\ListaRevisaoPOO - Ex09.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\bin\Debug\ListaRevisaoPOO - Ex09.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\bin\Debug\ListaRevisaoPOO - Ex09.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\obj\Debug\ListaRevisaoPOO - Ex09.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\obj\Debug\ListaRevisaoPOO - Ex09.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\obj\Debug\ListaRevisaoPOO - Ex09.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ListaRevisaoPOO - Ex09\obj\Debug\ListaRevisaoPOO - Ex09.pdb

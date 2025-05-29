@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula-29-05", "Aula-29-05.csproj", "{E8E5506D-489A-4E99-8225-26E0D20E78B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "..\Polimorfismo\Polimorfismo.csproj", "{B05CBDCB-070C-43DB-A421-09376B0F2A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E5506D-489A-4E99-8225-26E0D20E78B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E5506D-489A-4E99-8225-26E0D20E78B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E5506D-489A-4E99-8225-26E0D20E78B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E5506D-489A-4E99-8225-26E0D20E78B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05CBDCB-070C-43DB-A421-09376B0F2A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05CBDCB-070C-43DB-A421-09376B0F2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05CBDCB-070C-43DB-A421-09376B0F2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05CBDCB-070C-43DB-A421-09376B0F2A82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7B44798-54B7-42E3-9078-946605E94090}
+	EndGlobalSection
+EndGlobal

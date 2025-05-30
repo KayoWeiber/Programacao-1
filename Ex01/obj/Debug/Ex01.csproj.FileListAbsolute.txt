@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\bin\Debug\Ex01.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\bin\Debug\Ex01.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\bin\Debug\Ex01.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\obj\Debug\Ex01.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\obj\Debug\Ex01.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\obj\Debug\Ex01.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Ex01\obj\Debug\Ex01.pdb

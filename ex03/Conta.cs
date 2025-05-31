@@ -44,9 +44,9 @@ namespace ex03
             }
         }
 
-        public void verSaldo()
+        public virtual void verSaldo()
         {
-            Console.WriteLine($"saldo atual: R${saldo}");
+            Console.WriteLine($"\nsaldo atual: R${saldo}");
         }
     }
 }

@@ -5,3 +5,10 @@ C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aul
 C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.csproj.CoreCompileInputs.cache
 C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.exe
 C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.pdb
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\bin\Debug\Aula-29-05.exe.config
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\bin\Debug\Aula-29-05.exe
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\bin\Debug\Aula-29-05.pdb
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.csproj.AssemblyReference.cache
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.csproj.CoreCompileInputs.cache
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.exe
+C:\Users\Kayo Weiber\Documents\GitHub\Programacao-1\Aula-29-05\obj\Debug\Aula-29-05.pdb

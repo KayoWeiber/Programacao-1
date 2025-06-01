@@ -59,7 +59,7 @@ namespace ex04
                             {
                                 Console.Write("\nDigite o saldo atual da conta: "); double saldoConta = double.Parse(Console.ReadLine());
                                 Console.Write("\nDigite o limite atual da conta: "); double limiteConta = double.Parse(Console.ReadLine());
-                                contasEspeciais[countEspeciais] = new conta_especial(countConta, saldoConta, limiteConta);
+                                contasEspeciais[countEspeciais] = new conta_especial(countEspeciais, saldoConta, limiteConta);
                                 Console.WriteLine($"Conta {countEspeciais} com limite cadastrada com sucesso!!");
                                 countEspeciais++;
                                 

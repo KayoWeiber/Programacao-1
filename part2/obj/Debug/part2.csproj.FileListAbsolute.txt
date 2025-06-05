@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\bin\Debug\part2.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\bin\Debug\part2.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\bin\Debug\part2.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\obj\Debug\part2.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\obj\Debug\part2.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\obj\Debug\part2.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\part2\obj\Debug\part2.pdb

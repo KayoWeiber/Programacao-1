@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\obj\Debug\ex01andEx02.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\obj\Debug\ex01andEx02.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\bin\Debug\ex01andEx02.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\bin\Debug\ex01andEx02.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\bin\Debug\ex01andEx02.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\obj\Debug\ex01andEx02.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex01andEx02\obj\Debug\ex01andEx02.pdb

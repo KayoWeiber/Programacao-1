@@ -1,0 +1,7 @@
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\bin\Debug\ex04-aula-05-06.exe.config
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\bin\Debug\ex04-aula-05-06.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\bin\Debug\ex04-aula-05-06.pdb
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\obj\Debug\ex04-aula-05-06.csproj.AssemblyReference.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\obj\Debug\ex04-aula-05-06.csproj.CoreCompileInputs.cache
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\obj\Debug\ex04-aula-05-06.exe
+C:\Users\caiov\OneDrive\Documentos\GitHub\Programacao-1\ex04-aula-05-06\obj\Debug\ex04-aula-05-06.pdb
